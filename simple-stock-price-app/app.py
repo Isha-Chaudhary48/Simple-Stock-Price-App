@@ -15,10 +15,10 @@ google_data = google.history(period = "6mo")
 st.write(google_data.head())
 st.write(google_data['Close'].tail())
 
-st.write("## Closing Price ")
+st.write("- ## Closing Price ")
 st.line_chart(google_data.Close)
 
-st.write("## Volume Price ")
+st.write("- ## Volume Price ")
 st.line_chart(google_data.Volume)
 st.write(
     """
@@ -29,6 +29,9 @@ st.write(
 google_particular_data = google.history(start = '2010-05-30' , end = '2025-09-30')
 
 st.line_chart(google_particular_data['Close'])
+
+st.markdown(" :skull: :smile: :rocket:")   # adds emojis
+
 
 
 
